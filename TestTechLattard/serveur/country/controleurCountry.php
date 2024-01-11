@@ -44,41 +44,5 @@
 			
 			return DaoCountry::getDaoCountry()->Dao_Country_Afficher_Countries(); 
 	    }
-
-		// // Update:
-
-		// function Ctrl_Article_Form_Modifier($articleIda){
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Form_Modifier($articleIda); 
-		// }
-
-		// function Ctrl_Article_Modifier($articleIda){
-		// 	$nom = $_POST['nomArticle'];
-		// 	$description = $_POST['description'];
-		// 	$categorie = $_POST['categorie'];
-		// 	$prix = $_POST['prix'];
-		// 	$etat = $_POST['etat'];
-		// 	$statut = $_POST['statut'];
-
-		// 	$article = new Article($articleIda, $nom, $description, $categorie, $prix, $etat, ' ', $statut);
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Modifier($article); 
-		// }
-
-		// function Ctrl_Article_Form_Changer_Statut($articleIda){
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Form_Changer_Statut($articleIda); 
-		// }
-
-		// function Ctrl_Article_Changer_Statut($articleIda){
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Changer_Statut($articleIda); 
-		// }
-
-		// // Delete
-
-		// function Ctrl_Article_Form_Supprimer($articleIda){
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Form_Supprimer($articleIda); 
-		// }
-
-		// function Ctrl_Article_Supprimer($articleIda){
-		// 	return DaoArticle::getDaoArticle()->Dao_Article_Supprimer($articleIda); 
-		// }
 	}
 ?>

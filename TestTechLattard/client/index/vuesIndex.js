@@ -7,22 +7,12 @@ var actionsVuesIndex = (action, reponse) => {
 
 	switch(action){
 		case "afficherCountries" :
-            console.log(reponse);
-			afficherTableauCountries(page, reponse.listeCountries)
-		break;
-        case "carrouselPrecedent":
-            afficherPagePrecedente(reponse.listeArticles);
-        break;
-        case "carrouselSuivant":
-            afficherPageSuivante(reponse.listeArticles);
-        break;
-        case "enregistrerMembre" :
-            alert(reponse);  
-        break;   
+			afficherTableauCountries(reponse.listeCountries)
+		break; 
 	}
 }
 
-function afficherTableauCountries(page, listeCountries) {
+function afficherTableauCountries(listeCountries) {
     var contenu = $('#vueCountries');
     contenu.empty();
     var tab = '<table id="tableauCountries" class="table table-striped table-hover">';
@@ -55,18 +45,4 @@ function remplirTableauCountry(country){
     ligne += '</tr>';
 
     return ligne;
-}
-
-function afficherPageSuivante(listeArticles) {
-    if (page < Math.ceil(listeArticles.length / ARTICLESPARPAGE)) {
-        page++;
-        afficherArticles(page, listeArticles);
-    }
-}
-
-function afficherPagePrecedente(listeArticles) {
-    if (page > 1) {
-        page--;
-        afficherArticles(page, listeArticles);
-    }
 }
